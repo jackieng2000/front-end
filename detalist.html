@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <la>
+        <label for="favLang">Favorite Programming Language</label>
+        <input list="Lang" name="favLang"  id="favLang"/>
+            <datalist id="Lang">
+            <option value="html"></option>
+            <option value="css"></option>
+            <option value="js"></option>
+            </datalist>
+
+            <br/>
+            <input type="time" list = "popularHours" name="happyHour"/>
+            <datalist id="poplarHours" >
+                <option value="08:00"></option>
+                <option value="09:00"></option>
+                <option value="10:00"></option>
+            </datalist>
+
+<br>
+
+            <label for="tick">Tip Amount</label>
+            <input type="range" name="tick"
+            list="tickmarks" min = "0" max="10" step="2" value="3" id="tick">
+            <datalist id="tickmarks">
+                <option value="0"></option>
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100"></option>
+            </datalist>
+
+            <label for="fuel">Fuel:</label>
+            <meter id="fuel" min="0" max="100" 
+            low="40" high="70" value="90" optimum = "80">50/100</meter>
+
+            <br>
+            <video src="./video/video.mp4" type="video/mp4" autoplay muted loop controls>video</video>
+            <figcaption>video 1 : play card</figcaption>
+            <br>
+            <br><br>
+            <iframe src="https://www.youtube.com/embed/PLGAMOhB3n8" 
+            width="560" height="315" frameborder="0"></iframe> 
+            <br><br><br>
+            <iframe src="./pdf1.pdf" type = "application/pdf"
+            width="560" height="315" frameborder="0"></iframe> 
+            <iframe 
+            src="https://www.google.com/maps/embed/hG6rPV68r7LZBtz48" width="600" 
+            height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1" ... ></iframe>
+            
+            <img src="./computer.jpeg" alt="" usemap="#computermap"/> 
+            <map name="computermap">
+                <area shape="rect" 
+                    coords="34,44,270,350" 
+                    href="https://www.apple.com" alt="">
+                <area shape="circle" 
+                    coords="337, 300, 44" 
+                    href="https://www.google.com" 
+                    alt="">
+            </map>
+        </main>
+</body>
+</html>
