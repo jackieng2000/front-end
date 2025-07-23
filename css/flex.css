@@ -23,13 +23,35 @@ body {
 }
 
 .flex-item {
+    
+    height: 50px;
+    /* fle base size */
+    width: 50px;
     background-color: red;
-    height: 200px;
-    width: 200px;
     border:  1px solid black;
 }
 
+/* 1200-50-gap = space for grow distribute according */
+.item-1 {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.item-2 {
+    flex-grow: 2;
+    flex-shrink: 3;
+}
+
+.item-3 {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/* flex-basis: 200px or flex 1 1 auto; */
+
+/*
 .item-2{
     height: 100px;
     align-self: flex-end;
 }
+    */
