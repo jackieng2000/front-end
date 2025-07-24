@@ -9,21 +9,25 @@ main {
 }
 
 .container {
-    
+    display: flex;
+    justify-content: space-evenly;
     padding: 20px;
     background-color:yellow ; 
     border: #ff7e5f 1px solid;
+}
 
 section {
+    min-width: 200px;
     margin: 8px 2px;
     padding: 8px 8px;
     border: #ff7e5f 1px solid;
     width: 30%;
-    display: inline-block;
     border-radius: 5%;
     background-color: lightblue;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; ;
 }
+
+
 
 h2 {
     display: block;
@@ -119,3 +123,19 @@ ul {
     background-color: blue;
 }
 
+@media (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 1%;
+        /* padding: 5%; */
+    }
+    main {
+        padding: 5%;
+    }
+    section {
+        width: 85%;
+        margin : 1% auto;
+        }
+}
