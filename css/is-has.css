@@ -1,0 +1,53 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+/* if h1 h2 h3 in container */
+.container :is(h1,h2,p) {
+    color: blue;
+}
+ /*  same as .container h1 {} */
+/* .container h2{} */
+/* .container p {} */
+
+p a {
+    color: green;
+}
+
+p :is(a) {
+    color: red;
+}
+
+a:is(:hover, :focus) {
+    background: pink;
+}
+/* where is lower special than is */
+.container :where(h1,h2,p) {
+    color: green;
+}
+
+/* choose element have h1 span son */
+.container :has(h1, span) {
+    color: red;
+}
+/*  form child selett parent, upward selection */
+.container p:has(a) {
+    border: 1px solid blue;
+
+}
